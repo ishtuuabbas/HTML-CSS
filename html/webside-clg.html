@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>w1 page</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        a {
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: none;
+        }
+        
+        .section {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        
+        .section h2.section-head {
+            color: #000;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .section h2.section-head:after {
+            background-color: #3cabb1;
+            content: "";
+            display: block;
+            width: 100px;
+            height: 3px;
+            margin: 20px auto;
+        }
+        
+        #header {
+            color: #fff;
+            background: #3cabb1;
+        }
+        
+        #logo {
+            font-size: 2rem;
+            margin-top: 5px;
+        }
+        
+        #menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+        }
+        
+        #menu li {
+            display: inline-block;
+        }
+        
+        #menu li a {
+            color: #fff;
+            padding: 15px 10px;
+            display: block;
+        }
+        
+        #menu li a:hover {
+            background: #25959b;
+        }
+        
+        #banner {
+            background: url("clg pic/1.jpg") no-repeat 0 0;
+            background-size: cover;
+        }
+        
+        .banner-title {
+            padding-top: 5rem;
+        }
+        
+        .banner-title h1 {
+            background: rgba(255, 255, 255, 0.8);
+            display: inline-block;
+            padding: 10px;
+            margin: 0px;
+        }
+        
+        .banner-title p.lead {
+            color: #fff;
+            background: #3cabb1;
+            padding: 10px;
+        }
+        
+        .service-box {
+            text-align: center;
+        }
+        
+        .service-box i.fa {
+            color: #3cabb1;
+            font-size: 70px;
+            margin-bottom: 5px;
+        }
+        
+        #testimonails {
+            background: url("clg pic/15.jpeg") no-repeat 0 0;
+            background-size: cover;
+            padding: 50px 0;
+            position: relative;
+        }
+        
+        #testimonails:before {
+            /* background: rgba(52, 73, 94, 0.7);*/
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .testimonails img {
+            border-radius: 50%;
+        }
+        
+        .news-post img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .news-post h3 {
+            font-size: 1.35rem;
+        }
+        
+        .news-post h3 a {
+            color: #3cabb1;
+        }
+        
+        .post-date {
+            font-size: 13px;
+            margin-bottom: 2px;
+        }
+        
+        .post-date:before {
+            content: "\f073";
+            font-family: FontAwesome;
+            padding-right: 5px;
+        }
+        
+        a.readmore {
+            font-size: 14px;
+            color: #3cabb1;
+        }
+        
+        a.readmore:after {
+            content: "\f101";
+            font-family: FontAwesome;
+            padding-left: 5px;
+        }
+        
+        #footer-sidebar {
+            color: #fff;
+            background-color: #34495e;
+            padding: 20px 0;
+        }
+        
+        .footer-widget h4:after {
+            content: "";
+            background: #fff;
+            display: block;
+            width: 50px;
+            height: 2px;
+            margin: 5px 0;
+        }
+        
+        .footer-widget a {
+            color: #fff;
+        }
+        
+        .latest-news {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .latest-news li {
+            margin-bottom: 3px;
+        }
+        
+        .latest-news li:before {
+            content: "\f101";
+            font-family: FontAwesome;
+            padding-right: 5px;
+        }
+        
+        #footer {
+            color: #fff;
+            background-color: #2c3e50;
+            padding: 10px 0;
+        }
+        
+        #social-icons {
+            list-style: none;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+        }
+        
+        #social-icons li {
+            display: inline-block;
+            padding-left: 5px;
+        }
+        
+        #social-icons li a {
+            color: #fff;
+            font-size: 23px;
+        }
+        
+        @media ( max-width:992px) {
+            .news-post {
+                margin-bottom: 30px;
+            }
+        }
+        
+        @media ( max-width:768px) {
+            #logo {
+                text-align: center;
+                margin: 10px 0;
+            }
+            #menu {
+                text-align: center;
+            }
+            .banner-title {
+                padding-top: 0;
+            }
+            .banner-title h1 {
+                font-size: 1.7rem;
+            }
+            .section {
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+            .testimonails {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .service-box {
+                margin-bottom: 30px;
+            }
+            .footer-widget {
+                margin-bottom: 20px;
+            }
+            #footer {
+                text-align: 10px;
+            }
+            #social-icons {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="clg pic/logo.jpg" alt=""> </div>
+                <div class="col-md-8">
+                    <ul id="menu">
+                        <li>
+                            <a href="Home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="form.html">About us</a>
+                        </li>
+                        <li>
+                            <a href="Gallery.html">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="web page.html">Products</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="banner" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-6">
+                    <div class="banner-title">
+                        <h1 class="title">Welcome to the clg webside</h1>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container section">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="section-head">WELCOME TO GOVT GIRLS COLLEGE SKARDU</h2>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="service-box">
+                    <i class="fa fa-mortar-board"></i>
+                    <h3>Scholarship Facility</h3>
+                    <p>scholarships to exceptional and brilliant students at colleges</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="service-box">
+                    <i class="fa fa-book"></i>
+                    <h3>Books & Liberary</h3>
+                    <p>Library with a collection of 30,000 books on a variety of subjects.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="service-box">
+                    <i class="fa fa-certificate"></i>
+                    <h3>Certified Teachers</h3>
+                    <p>Qualified subject specialists who use career-oriented teaching methods</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="testimonails" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-head">Testimonails</h2>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonails">
+
+                        <img src="clg pic/images.jpeg" alt="">
+                        <div class="clg">Mrs.Nelofer Khan(Principal)</div>
+                        <div class="clg-princ">Islamiat TEACHER</div>
+                        <p>Federal Goverment Degree College for Women Skardu, established in 1989, is the first women college in skardu city,Gilgit Baltistan to fulfil the needs of providing higher education for the women. The main objective of the institude
+                            is provide high quality and comprehensive education oppertunities that are compatible to changing need of students.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonails">
+                        <img src="clg pic/images (1).jpeg" alt="">
+                        <div class="clg">Mrs.Abida parveen(Asst.Prof)</div>
+                        <div class="clg-princ">MATHEMATHICS TEACHER</div>
+                        <p>Federal Goverment Degree College for Women Skardu, established in 1989, is the first women college in skardu city,Gilgit Baltistan to fulfil the needs of providing higher education for the women. The main objective of the institude
+                            is provide high quality and comprehensive education oppertunities that are compatible to changing need of students.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="news" class="container section ">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="section-head ">Recent News</h2>
+            </div>
+            <div class="col-md-6 col-lg-3 news-post">
+                <img src="clg pic/2.jpg" alt="">
+                <h3><a href="">News Heading Here</a> </h3>
+                <div class="post-date">July 22,2023</div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, deserunt?</p>
+                <a href="" class="readmore">Read more</a>
+            </div>
+            <div class="col-md-6 col-lg-3 news-post">
+                <img src="clg pic/3.jpg" alt="">
+                <h3><a href="">News Heading Here</a> </h3>
+                <div class="post-date">July 22,2023</div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, deserunt?</p>
+                <a href="" class="readmore">Read more</a>
+            </div>
+            <div class="col-md-6 col-lg-3 news-post">
+                <img src="clg pic/3a.jpg" alt="">
+                <h3><a href="">News Heading Here</a> </h3>
+                <div class="post-date">July 22,2023</div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, deserunt?</p>
+                <a href="" class="readmore">Read more</a>
+            </div>
+            <div class="col-md-6 col-lg-3 news-post">
+                <img src="clg pic/2a.jpg" alt="">
+                <h3><a href="">News Heading Here</a> </h3>
+                <div class="post-date">July 22,2023</div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, deserunt?</p>
+                <a href="" class="readmore">Read more</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="news" class="container section ">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="section-head ">OUR EXPERIENCED STAFFS</h2>
+                <p class="text-center lead">
+                    <b>  Considering desire as primary motivation for the generation of narratives is a useful concept.</b></p>
+            </div>
+            <div class="col-md-6 col-lg-3 news-post ">
+                <img src="pic/mam.jpg" alt="">
+                <h3 class="text-center"><a href="">Mrs.Khadija Bano(Instructor)</a> </h3>
+                <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, deserunt?</p>
+
+            </div>
+            <div class="col-md-6 col-lg-3 news-post">
+                <img src="pic/group1.jpg" alt="">
+                <h3 class="text-center"><a href="">Mrs.Rehana Haider(Instructor)</a> </h3>
+                <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, deserunt?</p>
+
+            </div>
+            <div class="col-md-6 col-lg-3 news-post">
+                <img src="pic/group2.jpg" alt="">
+                <h3 class="text-center"><a href="">Mrs.Neelam Jamial(Visiting)</a> </h3>
+                <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, deserunt?</p>
+
+            </div>
+            <div class="col-md-6 col-lg-3 news-post">
+                <img src="pic/group3.jpg" alt="">
+                <h3 class="text-center"><a href="">Mrs.Anum Fatima(Lecturer)</a> </h3>
+                <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, deserunt?</p>
+
+            </div>
+        </div>
+    </div>
+    <div id="footer-sidebar">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="footer-widget">
+                        <h4> About College </h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae earum quibusdam velit magni obcaecati possimus officiis, omnis aspernatur numquam dignissimos totam, accusantium quam deleniti voluptatum, officia amet labore?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, soluta!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="footer-widget">
+                        <h4> Latest news </h4>
+                        <ul class="latest-news">
+                            <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
+                            <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
+                            <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
+                            <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
+                            <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="footer-widget">
+                        <h4> College address </h4>
+                        <address>
+                        <b>Degree college for women skardu</b><br>
+                        Jummah masjid road skardu <br>
+                        P:(123) 456-7890
+                       </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">Copyright@2023 girls clg skd .</div>
+                <div class="col-md-6">
+                    <ul id="social-icons">
+                        <li>
+                            <a href="" class="fa fa-facebook-square"></a>
+                        </li>
+                        <li>
+                            <a href="" class="fa fa-twitter-square"></a>
+                        </li>
+                        <li>
+                            <a href="" class="fa fa-linkedin-square"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

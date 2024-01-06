@@ -1,0 +1,9 @@
+.leftdiv {
+    float: left;
+    height: fit-content;
+}
+
+.middlediv {
+    float: right;
+    height: fit-content;
+}

@@ -1,0 +1,121 @@
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+body {
+    display: block;
+    margin: 0;
+}
+
+#header {
+    background-color: gray;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    padding: 8px;
+}
+
+ul.row-ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+ul.row-ul li {
+    list-style: none;
+    margin: 0 10px;
+    font-size: 22px;
+}
+
+ul.row-ul li a {
+    text-decoration: none;
+}
+
+ul.row-ul li:hover {
+    background: rosybrown;
+}
+
+.is-row-ul {
+    display: flex;
+    background-color: brown;
+}
+
+.na-menu {
+    max-width: 100%;
+    width: 100%;
+}
+
+input.btn-is-primary:hover {
+    background-color: brown;
+}
+
+h3 {
+    color: hotpink;
+}
+
+input.is-search {
+    border: 1px solid black;
+    border-radius: 5px;
+    border-top-right-radius: none;
+    border-bottom-right-radius: unset;
+    border-top-right-radius: unset;
+    border-right: none;
+}
+
+input.btn-is-primary {
+    border: 1px solid black;
+    border-radius: 5px;
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
+    background-color: blue;
+    padding: 1 !important;
+}
+
+.main-col-12 {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.is-col-06 {
+    border: 2px solid black;
+    background-image: url(image/K1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    padding: 30px 40px 15px 15px;
+    text-align: center;
+}
+
+.is-col-6 {
+    background: ghostwhite;
+    width: 50%;
+    text-align: center;
+}
+
+.is-col-03 {
+    display: flex;
+    width: 100%;
+}
+
+.is-col-3 {
+    display: flex;
+    width: 100%;
+}
+
+button {
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    padding: 7px;
+    background-color: gray;
+    margin: 5px;
+    cursor: pointer;
+}

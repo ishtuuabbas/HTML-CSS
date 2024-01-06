@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .is-h1 {
+            display: flex;
+            justify-content: center;
+            margin: 5px;
+            color: forestgreen;
+        }
+
+        form#is-form {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        input#name {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        select,
+        input[type="date"] {
+            margin-bottom: 10px;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 10px;
+            background-color: forestgreen;
+            color: white;
+            border: none;
+        }
+
+        button:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="is-h1">
+        <h1>Book your Appointment</h1>
+    </div>
+    <form id="is-form" onsubmit="return bookAppointment()">
+        <b> Name of Patient: </b><input type="text" id="name" placeholder="Patient Name" required>
+        <br>
+        <label for="service"><b>Service:</b></label>
+        <select id="service" required>
+            <option value=""> Select Service </option>
+            <option value="massage">Massaging</option>
+            <option value="call">Calling</option>
+        </select>
+        <br>
+        <b>Date:</b> <input type="date" id="date" required>
+        <br>
+        <b>Time:</b><select id="time">
+            <option value="05:00">05:00 PM</option>
+            <option value="06:00">06:00 PM</option>
+            <option value="07:00">07:00 PM</option>
+            <option value="08:00">08:00 PM</option>
+            <option value="09:00">09:00 PM</option>
+            <option value="10:00">10:00 PM</option>
+        </select>
+        <br>
+        <button type="submit">Book Appointment</button>
+    </form>
+    <script>
+        function bookAppointment() {
+            alert("Your appointment is booked!");
+            return false;
+        }
+    </script>
+</body>
+
+</html>
